@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./public/img/favicon.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="./public/css/b5.css">
+    <link rel="stylesheet" href="./public/css/main.css">
+    <script src="./public/js/b5.js"></script>
+    <script src="./public/js/swal2.js"></script>
+    <title>Permisos</title>
+</head>
+<body>
+    <div class="container mt-5">
+        <div class="row justify-content-center">
+            <div class="col-md-5">
+                <div class="card card-bg text-white">
+                    <form id="frm_calculadora" class="card-body">
+                        <h1 class="lead fs-3 text-center">Calculadora de Permisos</h1>
+                        <hr class="text-primary">
+                        <span class="text-danger" id="error"></span>
+                        <div class="form-floating ">
+                            <input class="form-control mb-3" type="text" id="permiso" placeholder="Permiso">  
+                            <label class="text-primary text-center" for="permiso">Permiso</label>
+                        </div>
+                        <div class="form-floating">
+                            <select class="form-select mb-3" name="usuario" id="usuario">
+                                <option value="0">Sin permiso</option>
+                                <option value="1">Ejecucion</option>
+                                <option value="2">Escritura</option>
+                                <option value="3">Escritura y Ejecucion</option>
+                                <option value="4">Lectura</option>
+                                <option value="5">Lectura y Ejecucion</option>
+                                <option value="6">Lectura y Escritura</option>
+                                <option value="7">Todos</option>
+                            </select>
+                            <label class="text-primary" for="usuario">Permiso usuario:</label>
+                        </div>
+                        <div class="form-floating">
+                            <select class="form-select mb-3" name="grupo" id="grupo">
+                                <option value="0">Sin permiso</option>
+                                <option value="1">Ejecucion</option>
+                                <option value="2">Escritura</option>
+                                <option value="3">Escritura y Ejecucion</option>
+                                <option value="4">Lectura</option>
+                                <option value="5">Lectura y Ejecucion</option>
+                                <option value="6">Lectura y Escritura</option>
+                                <option value="7">Todos</option>
+                            </select>
+                            <label class="text-primary" for="grupo">Permiso grupo:</label>
+                        </div>
+                        <div class="form-floating">
+                            <select class="form-select mb-3" name="otros" id="otros">
+                                <option value="0">Sin permiso</option>
+                                <option value="1">Ejecucion</option>
+                                <option value="2">Escritura</option>
+                                <option value="3">Escritura y Ejecucion</option>
+                                <option value="4">Lectura</option>
+                                <option value="5">Lectura y Ejecucion</option>
+                                <option value="6">Lectura y Escritura</option>
+                                <option value="7">Todos</option>
+                            </select>
+                            <label class="text-primary" for="otros">Permiso otros:</label>
+                        </div>
+                        <button type="button" id="btn_limpiar" class="btn btn-primary w-100">Limpiar</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>    
+    <script src="./public/js/index.js"></script>
+</body>
+</html>
